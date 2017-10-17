@@ -6,33 +6,15 @@ public class BrickScript : MonoBehaviour {
 
 	public int health; 
 
-
-
-
-
-	public class Health : MonoBehaviour 
+	void OnCollisionEnter2D (Collision2D collider)
 	{
-		public const int maxHealth = 3;
-		public int currentHealth = maxHealth;
 
-		if (currentHealth <= 0)
-		{
-				currentHealth = 0;
-				Debug.Log("Dead!");
+		//Take away 1 health for each impact
+		health--;
 
-		}	
-	}
-		// Use this for initialization
-	public.class
-
-
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+		// If health is < 0 destroy the brick.
+		if (health <= 0) {
+			Destroy (this.gameObject);
+		}
 	}
 }
-	
