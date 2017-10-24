@@ -101,12 +101,13 @@
 -define:UNITY_EDITOR_OSX
 -define:ENABLE_NATIVE_ARRAY_CHECKS
 -define:UNITY_TEAM_LICENSE
-'Assets/Paddle.cs'
+'Assets/Scripts/ballscript.cs'
 'Assets/Scripts/BrickScript.cs'
 'Assets/Scripts/Floor.cs'
 'Assets/Scripts/LevelManager.cs'
 'Assets/Scripts/Leveloperations.cs'
 'Assets/Scripts/MusicManager.cs'
+'Assets/Scripts/Paddle.cs'
 -r:'/Applications/Unity/Unity.app/Contents/Mono/lib/mono/unity/System.Runtime.Serialization.dll'
 -r:'/Applications/Unity/Unity.app/Contents/Mono/lib/mono/unity/System.Xml.Linq.dll'
 -r:'/Applications/Unity/Unity.app/Contents/Mono/lib/mono/unity/UnityScript.dll'
