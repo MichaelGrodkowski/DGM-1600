@@ -1,65 +1,53 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine;
+using System.Collections;
 
 public class PlayerController : MonoBehaviour {
 	
 
+	public float speed;             //Floating point variable to store the player's movement speed.
+
+	private Rigidbody2D rb2d;       //Store a reference to the Rigidbody2D component required to use 2D Physics.
 
 
 	void Start () {
-		rig = GetComponent<Rigidbody>();
-		transform.position 
-
+		//Get and store a reference to the Rigidbody2D component so that we can access it.
+		rb2d = GetComponent<Rigidbody2D> ();
 	}
 
-	void Update () {
-		if (Input.GetKeyDown (KeyCode.W)) { transform.position
+	//FixedUpdate is called at a fixed interval and is independent of frame rate. Put physics code here.
+	void FixedUpdate()
+	{
+		//Store the current horizontal input in the float moveHorizontal.
+		float moveHorizontal = Input.GetAxis ("Horizontal");
 
-		}
-		if (Input.GetKeyDown (KeyCode.A)) {
-		
-		}
-		if (Input.GetKeyDown (KeyCode.S)) {
-		
-		}
-		if (Input.GetKeyDown (KeyCode.D)) {
-		
-		}
+		//Store the current vertical input in the float moveVertical.
+		float moveVertical = Input.GetAxis ("Vertical");
 
-		//check for button push
-		// print something out
-		// move our player.
-		//down
-		//left
-		//right
+		//Use the two store floats to create a new Vector2 variable movement.
+		Vector2 movement = new Vector2 (moveHorizontal, moveVertical);
 
-
+		//Call the AddForce function of our Rigidbody2D rb2d supplying movement multiplied by speed to move our player.
+		rb2d.AddForce (movement * speed);
 	}
-}
-
-public Text textObject; 
-public bool gasoline = false;
-public enum States
-
-{
-	start, lost, Car_breakdown0, Car_breakdown1, Abandoned_Mansion, Collapsed_Church, Basement_stair_door, Second_floor_stairs, Creaky_side_door, Clerk_office, Investigate_Crying, Storage_closet,
-	Candle_lit_door, Witch_room, Ignore_crying, Cellar, Victory, Cellar_light, Collapsed_church01,
-};
-public States myState;
-
-
-
-// Use this for initialization
-void Start () {
-
-	myState = States.start;
 
 
 }
 
-// Update is called once per frame
-void Update () {
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

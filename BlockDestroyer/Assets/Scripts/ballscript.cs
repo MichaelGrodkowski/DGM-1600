@@ -24,7 +24,7 @@ public class ballscript : MonoBehaviour {
 			// If push start button
 			if (Input.GetMouseButtonDown (0)) {
 				// Ball goes flying off of the paddle. 
-				rigid.velocity = new Vector2 (4,20);
+				rigid.velocity = new Vector2 (6,28);
 				// Playing needs to be set to true, playing = true;
 				playing = true;
 
@@ -41,3 +41,4 @@ public class ballscript : MonoBehaviour {
 		
 	}
 }
+
