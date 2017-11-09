@@ -284,7 +284,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_NormalColor: {r: 0.7352941, g: 0, b: 0, a: 1}
     m_HighlightedColor: {r: 0.9705882, g: 0.91989315, b: 0.23551036, a: 1}
     m_PressedColor: {r: 0.9705882, g: 0, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -337,7 +337,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: a6a5b7d107a3640bcacf680a6e77a70d, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c68b0f0205e54c79be2f719d328a477, type: 3}
     m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
@@ -465,7 +465,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9852941, g: 0.9852941, b: 0.9852941, a: 1}
+  m_Color: {r: 0.9705882, g: 0.6626774, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -473,7 +473,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: a6a5b7d107a3640bcacf680a6e77a70d, type: 3}
+    m_Font: {fileID: 12800000, guid: 8be1bfad3812f4d10aa70f1930b7f735, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -485,7 +485,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: START! Press Me!
+  m_Text: LAUNCH - prepare for battle
 --- !u!222 &978456765
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -664,7 +664,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1571552741}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
@@ -677,7 +677,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: db843ac22deec418abd51cd0bb51e9a5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 160919ec6c7944536b82e55462ad63c1, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -746,7 +746,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: a6a5b7d107a3640bcacf680a6e77a70d, type: 3}
+    m_Font: {fileID: 12800000, guid: 8be1bfad3812f4d10aa70f1930b7f735, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -758,7 +758,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Space Fihghter
+  m_Text: 'Mercenary Contract
 
 '
 --- !u!222 &1633186788
@@ -823,7 +823,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.039035477, g: 0.2794118, b: 0.09042632, a: 1}
+    m_NormalColor: {r: 0, g: 0.19492894, b: 0.9117647, a: 1}
     m_HighlightedColor: {r: 0.9485294, g: 0.8985055, b: 0.22318338, a: 1}
     m_PressedColor: {r: 0.048821356, g: 0.9485294, b: 0.16671404, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}

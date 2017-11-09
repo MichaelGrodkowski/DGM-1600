@@ -101,6 +101,7 @@
 -define:UNITY_EDITOR_OSX
 -define:ENABLE_NATIVE_ARRAY_CHECKS
 -define:UNITY_TEAM_LICENSE
+'Assets/Follow.cs'
 'Assets/Scripts/Laser.cs'
 'Assets/Scripts/LevelManager.cs'
 'Assets/Scripts/Leveloperations.cs'

@@ -40,6 +40,13 @@ public class PlayerController : MonoBehaviour {
 				transform.position += Vector3.down * speed * Time.deltaTime;
 			}
 
+		Vector3 POS = Camera.main.WorldToScreenPoint (transform.position);
+		Vector3 dir = Input.mousePosition - POS;
+		float angle = Mathf.Atan2 (dir.y, dir.x) * Mathf.Rad2Deg - 90;
+		transform.rotation = Quaternion.AngleAxis (angle, Vector3.forward);
+
+
+
 
 		if(Input.GetButtonUp("Fire1"))
 		{

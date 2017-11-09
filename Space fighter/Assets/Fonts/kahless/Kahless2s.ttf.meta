@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 2c68b0f0205e54c79be2f719d328a477
+timeCreated: 1510249162
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Kahless Shadow
+  fontNames:
+  - Kahless Shadow
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

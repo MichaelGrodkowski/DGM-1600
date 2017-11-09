@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: a46a28012db0440829dd75d6a5b11545
+timeCreated: 1510249162
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Kahless
+  fontNames:
+  - Kahless
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
