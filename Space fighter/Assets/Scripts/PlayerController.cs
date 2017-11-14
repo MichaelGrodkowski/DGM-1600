@@ -23,6 +23,16 @@ public class PlayerController : MonoBehaviour {
 	}
 	void Update () {
 
+		if (Input.GetKey (KeyCode.W))
+			Particles.Emit (1);
+		if (Input.GetKey (KeyCode.A))
+			Particles.Emit (1);
+		if (Input.GetKey (KeyCode.S))
+			Particles.Emit (1);
+		if (Input.GetKey (KeyCode.D))
+			Particles.Emit (1);
+		
+
 			if (Input.GetKey(KeyCode.A))
 			{
 				transform.position += Vector3.left * speed * Time.deltaTime;
