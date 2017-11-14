@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour {
 	public GameObject projectile;
 	public float speed;       
 	public float shotForce;
-
+	public ParticleSystem Particles;
 
 
 
