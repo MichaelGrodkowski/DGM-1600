@@ -29,7 +29,7 @@ public class BrickScript : MonoBehaviour {
 			LevelManager.CheckBrickCount ();
 		}
 		GetComponent<SpriteRenderer>().sprite = picture[count];
-	
+	//sprite render to be used in game.
 
 	}
 }
