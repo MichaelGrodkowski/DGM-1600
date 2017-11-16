@@ -17,10 +17,7 @@ public class Powerup : MonoBehaviour {
 		
 		}
 	}
-
-
-
-
+		
 	// Update is called once per frame
 	void Update () {
 		
@@ -29,22 +26,21 @@ public class Powerup : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other){
 		Debug.Log ("We hit a powerup!");
 
-
 		if (Powertype == Type.speed) {
 		}
-
-		case Type.speed:
-		default:
-			break;
-		
-
 		switch (Powertype) {
-			case Type.speed
-		
+		case Type.speed:
 			other.GetComponent<PlayerController> ().speed *= 2;
-				break;
-			case Type.Shield
-				break;
+			break;
+		case Type.Shield:
+
+			break;
+
+		case Type.Plasma:
+			break;
+		case Type.SuperUltraMegaHyperLaserBeam:
+			break;
+		}
 
 
 		Destroy (this.gameObject);
