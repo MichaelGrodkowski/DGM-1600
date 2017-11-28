@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Meteor : MonoBehaviour {
 
-	public class meteor : MonoBehaviour {
 
 		public int health; 
 		public Sprite[] picture;
@@ -35,5 +34,4 @@ public class Meteor : MonoBehaviour {
 
 
 		}
-}
 }
