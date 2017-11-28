@@ -8,7 +8,7 @@ public class Meteor : MonoBehaviour {
 
 		public int health; 
 		public Sprite[] picture;
-		private int count = 0;
+		public int count = 0;
 		public LevelManager LevelManager;
 		public float startingSpin;
 

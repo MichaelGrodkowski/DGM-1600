@@ -32,6 +32,13 @@ public class Powerup : MonoBehaviour {
 		case Type.speed:
 			other.GetComponent<PlayerController> ().speed *= 2;
 			break;
+		
+		
+		
+		
+		
+		
+		
 		case Type.Shield:
 
 			break;
