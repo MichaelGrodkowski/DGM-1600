@@ -11,44 +11,44 @@ public class PlayerController : MonoBehaviour {
 	public float speed;       
 	public float shotForce;
 	public ParticleSystem Particles;
-
+	public float thrust;
 
 
 	//Floating point variable to store the player's movement speed.
 
-	private Rigidbody2D rb2d;       //Store a reference to the Rigidbody2D component required to use 2D Physics.
+	public Rigidbody2D rb2d;       //Store a reference to the Rigidbody2D component required to use 2D Physics.
 
 
 	void Start () {
 	}
 	void Update () {
 
-		if (Input.GetKey (KeyCode.W))
-			Particles.Emit (1);
-		if (Input.GetKey (KeyCode.A))
-			Particles.Emit (1);
-		if (Input.GetKey (KeyCode.S))
-			Particles.Emit (1);
-		if (Input.GetKey (KeyCode.D))
+		//if (Input.GetKey (KeyCode.W))
+			//Particles.Emit (1);
+		//if (Input.GetKey (KeyCode.A))
+			//Particles.Emit (1);
+		//if (Input.GetKey (KeyCode.S))
+			//Particles.Emit (1);
+		if (Input.GetKey (KeyCode.Space))
 			Particles.Emit (1);
 		
 
-			if (Input.GetKey(KeyCode.A))
-			{
-				transform.position += Vector3.left * speed * Time.deltaTime;
-			}
-			if (Input.GetKey(KeyCode.D))
-			{
-				transform.position += Vector3.right * speed * Time.deltaTime;
-			}
-			if (Input.GetKey(KeyCode.W))
-			{
-				transform.position += Vector3.up * speed * Time.deltaTime;
-			}
-			if (Input.GetKey(KeyCode.S))
-			{
-				transform.position += Vector3.down * speed * Time.deltaTime;
-			}
+			//if (Input.GetKey(KeyCode.A))
+			//{
+				//transform.position += Vector3.left * speed * Time.deltaTime;
+			//}
+			//if (Input.GetKey(KeyCode.D))
+			//{
+				//transform.position += Vector3.right * speed * Time.deltaTime;
+			//}
+			//if (Input.GetKey(KeyCode.W))
+			//{
+				//transform.position += Vector3.up * speed * Time.deltaTime;
+			//}
+			//if (Input.GetKey(KeyCode.S))
+			//{
+				//transform.position += Vector3.down * speed * Time.deltaTime;
+			//}
 
 		Vector3 POS = Camera.main.WorldToScreenPoint (transform.position);
 		Vector3 dir = Input.mousePosition - POS;
@@ -64,23 +64,14 @@ public class PlayerController : MonoBehaviour {
 			shot.GetComponent<Rigidbody2D>().AddForce(shotPos.up * shotForce);
 			//shot.AddForce(shotPos.forward * shotForce);
 		}
-	}
+
+		}
+	void FixedUpdate () {
+		if (Input.GetKey ("space")) {
+			rb2d.AddForce (transform.up * thrust);
+		}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 

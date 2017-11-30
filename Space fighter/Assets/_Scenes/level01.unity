@@ -11167,6 +11167,8 @@ MonoBehaviour:
   speed: 5
   shotForce: 1000
   Particles: {fileID: 293691816}
+  thrust: 7.4
+  rb2d: {fileID: 1936769306}
 --- !u!212 &1936769308
 SpriteRenderer:
   m_ObjectHideFlags: 0
