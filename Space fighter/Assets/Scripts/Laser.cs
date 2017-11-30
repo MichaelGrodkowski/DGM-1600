@@ -7,7 +7,7 @@ public class Laser : MonoBehaviour {
 	// Use this for initialization
 	public float Speed;
 	public float lifetime;
-
+	public int damage;
 
 	void Update ()
 	{
@@ -18,4 +18,9 @@ public class Laser : MonoBehaviour {
 		transform.Translate (Vector3.up * Speed * Time.deltaTime);
 	
 	}
+	void OnTriggerEnter2D(Collider2D other){
+		other.GetComponent<Healthscript> ().IncrementHealth(damage);
+		Destroy (gameObject);
 }
+}
+

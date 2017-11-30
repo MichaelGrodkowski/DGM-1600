@@ -5,7 +5,7 @@ using UnityEngine;
 public class Meteor : MonoBehaviour {
 
 
-		public int health; 
+		
 		public Sprite[] picture;
 		public int count = 0;
 		public LevelManager LevelManager;
@@ -17,21 +17,13 @@ public class Meteor : MonoBehaviour {
 			GetComponent<Rigidbody2D> ().AddTorque(Random.Range(-startingSpin,startingSpin),ForceMode2D.Impulse); 
 		}
 
-		void Update ()
-		{
+	private void OnCollisionEnter2D(Collision2D coll){
+		coll.gameObject.GetComponent<Healthscript> ().IncrementHealth (-1);
+	
+	}
 
-			//Take away 1 health for each impact
-			health--;
-			count++;
-
-			// If health is < 0 destroy the brick.
+			//GetComponent<SpriteRenderer>().sprite = picture[count];
 
 
-			if (health <= 0) {
-				Destroy (this.gameObject);
-			}
-			GetComponent<SpriteRenderer>().sprite = picture[count];
-
-
-		}
 }
+

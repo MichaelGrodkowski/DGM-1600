@@ -51,7 +51,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\AutoDestroy.cs" />
+     <Compile Include="Assets\Scripts\example.cs" />
+     <Compile Include="Assets\Scripts\Explosion Effect.cs" />
      <Compile Include="Assets\Scripts\Follow.cs" />
      <Compile Include="Assets\Scripts\Healthscript.cs" />
      <Compile Include="Assets\Scripts\Laser.cs" />
