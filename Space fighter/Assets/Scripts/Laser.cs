@@ -8,6 +8,10 @@ public class Laser : MonoBehaviour {
 	public float Speed;
 	public float lifetime;
 	public int damage;
+	public AudioSource audio;
+	public PlayerController PlayerControllerScript;
+
+
 
 	void Update ()
 	{
@@ -19,7 +23,7 @@ public class Laser : MonoBehaviour {
 	
 	}
 	void OnTriggerEnter2D(Collider2D other){
-		other.GetComponent<Healthscript> ().IncrementHealth(damage);
+		//other.GetComponent<Healthscript> ().IncrementHealth(damage);
 		Destroy (gameObject);
 }
 }

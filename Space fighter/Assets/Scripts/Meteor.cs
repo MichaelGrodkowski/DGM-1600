@@ -13,9 +13,11 @@ public class Meteor : MonoBehaviour {
 
 		void Start()
 		{
+		transform.position = Random.insideUnitCircle * 10;
 
 			GetComponent<Rigidbody2D> ().AddTorque(Random.Range(-startingSpin,startingSpin),ForceMode2D.Impulse); 
 		}
+
 
 	private void OnCollisionEnter2D(Collision2D coll){
 		coll.gameObject.GetComponent<Healthscript> ().IncrementHealth (-1);

@@ -7,7 +7,7 @@ public class AutoDestroy : MonoBehaviour {
 	// Use this for initialization
 	private void Start () {
 	
-		Destroy (gameObject, GetComponent<ParticleSystem> ().duration);
+		Destroy (gameObject, GetComponent<ParticleSystem> ().main.duration);
 	}
 	
 
