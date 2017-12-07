@@ -11,7 +11,7 @@ public class Healthscript : MonoBehaviour {
 	public Animator animator;
 	public GameObject Scoreboard;
 	public Scoreboard ScoreScript;
-
+	private bool MePlayer(){
 
 	private void Start() {
 			ShowHearts ();
@@ -32,6 +32,13 @@ public class Healthscript : MonoBehaviour {
 
 	}
 
+		private bool MePlayer(){
+		if (GetComponent<PlayerController> ()) {
+			return true;
+		} else {
+			return false;
+		}
+	}
 
 			//collision of laser to rigidbodies does damage.
 			void OnTriggerEnter2D (Collider2D myCollider) {
@@ -77,8 +84,8 @@ public class Healthscript : MonoBehaviour {
 		Scoreboard.GetComponent<Scoreboard> ().IncrementScoreboard (10);
 
 	}
-	//if (MePlayer());
-	//gameObject.GetComponent<PlayerController> ().levelManager.GetComponent<LevelManager> ().LevelLoad("GameOver")
+	if (MePlayer()) {
+	gameObject.GetComponent<PlayerController> ().levelManager.GetComponent<LevelManager> ().LevelLoad("GameOver")
 
 }
 
