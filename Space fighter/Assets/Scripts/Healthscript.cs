@@ -11,7 +11,7 @@ public class Healthscript : MonoBehaviour {
 	public Animator animator;
 	public GameObject Scoreboard;
 	public Scoreboard ScoreScript;
-	private bool MePlayer(){
+
 
 	private void Start() {
 			ShowHearts ();
@@ -32,7 +32,7 @@ public class Healthscript : MonoBehaviour {
 
 	}
 
-		private bool MePlayer(){
+	private bool MePlayer () {
 		if (GetComponent<PlayerController> ()) {
 			return true;
 		} else {
@@ -61,12 +61,20 @@ public class Healthscript : MonoBehaviour {
 			public void IncrementHealth(int value){
 		health += value;
 		if (health <= 0) {
-		    Destroy (gameObject);
+			Destroy (gameObject);
 			Instantiate (explosionEffect, transform.position, Quaternion.identity);
-
+			//if (!MePlayer ()) {
+			// ();
+			//}
+			//if (MePlayer ()) {
+			//gameObject.GetComponent<PlayerController> ().levelManager.GetComponent<LevelManager> ().LevelLoad ("GameOver");
+			//}
+		
+			ShowHearts ();
 		}
-		ShowHearts ();
 	}
+
+	
 	private void ShowHearts(){
 		//turn all hearts off
 	for (int i = 0; i < hearts.Length; i++) { 
@@ -84,8 +92,7 @@ public class Healthscript : MonoBehaviour {
 		Scoreboard.GetComponent<Scoreboard> ().IncrementScoreboard (10);
 
 	}
-	if (MePlayer()) {
-	gameObject.GetComponent<PlayerController> ().levelManager.GetComponent<LevelManager> ().LevelLoad("GameOver")
+	
 
 }
 
